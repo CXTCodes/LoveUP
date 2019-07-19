@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+
+    <item android:drawable="@drawable/tap5" android:duration="100"/>
+    <item android:drawable="@drawable/tap6" android:duration="100"/>
+    <item android:drawable="@drawable/tap8" android:duration="100"/>
+    <item android:drawable="@drawable/tap8" android:duration="100"/>
+    <item android:drawable="@drawable/tap9" android:duration="100"/>
+    <item android:drawable="@drawable/tap10" android:duration="100"/>
+    <item android:drawable="@drawable/tap11" android:duration="100"/>
+    <item android:drawable="@drawable/tap12" android:duration="100"/>
+    <item android:drawable="@drawable/tap13" android:duration="100"/>
+    <item android:drawable="@drawable/tap14" android:duration="100"/>
+    <item android:drawable="@drawable/tap15" android:duration="100"/>
+    <item android:drawable="@drawable/tap16" android:duration="100"/>
+    <item android:drawable="@drawable/tap17" android:duration="100"/>
+    <item android:drawable="@drawable/tap18" android:duration="100"/>
+    <item android:drawable="@drawable/tap19" android:duration="100"/>
+    <item android:drawable="@drawable/tap20" android:duration="100"/>
+    <item android:drawable="@drawable/tap21" android:duration="100"/>
+    <item android:drawable="@drawable/tap22" android:duration="100"/>
+    <item android:drawable="@drawable/tap23" android:duration="100"/>
+    <item android:drawable="@drawable/tap24" android:duration="100"/>
+    <item android:drawable="@drawable/tap25" android:duration="100"/>
+    <item android:drawable="@drawable/tap26" android:duration="100"/>
+    <item android:drawable="@drawable/tap27" android:duration="100"/>
+    <item android:drawable="@drawable/tap28" android:duration="100"/>
+    <item android:drawable="@drawable/tap29" android:duration="100"/>
+    <item android:drawable="@drawable/tap30" android:duration="100"/>
+    <item android:drawable="@drawable/tap31" android:duration="100"/>
+    <item android:drawable="@drawable/tap32" android:duration="100"/>
+    <item android:drawable="@drawable/tap33" android:duration="100"/>
+    <item android:drawable="@drawable/tap34" android:duration="100"/>
+    <item android:drawable="@drawable/tap35" android:duration="100"/>
+    <item android:drawable="@drawable/tap36" android:duration="100"/>
+    <item android:drawable="@drawable/tap37" android:duration="100"/>
+    <item android:drawable="@drawable/tap38" android:duration="100"/>
+    <item android:drawable="@drawable/tap40" android:duration="100"/>
+    <item android:drawable="@drawable/tap42" android:duration="100"/>
+    <item android:drawable="@drawable/tap44" android:duration="100"/>
+    <item android:drawable="@drawable/tap46" android:duration="100"/>
+    <item android:drawable="@drawable/tap48" android:duration="100"/>
+	<item android:drawable="@drawable/tap50" android:duration="100"/>
+	<item android:drawable="@drawable/tap52" android:duration="100"/>
+	<item android:drawable="@drawable/tap54" android:duration="100"/>
+	<item android:drawable="@drawable/tap56" android:duration="100"/>
+	<item android:drawable="@drawable/tap58" android:duration="100"/>
+	<item android:drawable="@drawable/tap60" android:duration="100"/>
+	<item android:drawable="@drawable/tap62" android:duration="100"/>
+	<item android:drawable="@drawable/tap64" android:duration="100"/>
+	<item android:drawable="@drawable/tap66" android:duration="100"/>
+	<item android:drawable="@drawable/tap68" android:duration="100"/>
+	<item android:drawable="@drawable/tap70" android:duration="100"/>
+	<item android:drawable="@drawable/tap72" android:duration="100"/>
+	<item android:drawable="@drawable/tap74" android:duration="100"/>
+	<item android:drawable="@drawable/tap76" android:duration="100"/>
+	<item android:drawable="@drawable/tap78" android:duration="100"/>
+
+</animation-list>
