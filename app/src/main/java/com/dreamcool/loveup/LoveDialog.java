@@ -38,10 +38,12 @@ public class LoveDialog extends Dialog {
     private TextView tvText;
     private Timer timer;
     private TimerTask task;
+    private int height;
 
-    public LoveDialog(Context context) {
+    public LoveDialog(Context context,int height) {
         super(context, R.style.dialog_style2);
         this.context = context;
+        this.height = height;
         setCustomDialog();
     }
 
@@ -100,6 +102,7 @@ public class LoveDialog extends Dialog {
         scaleY.setDuration(2000);//设置持续时间
         ObjectAnimator alpha = ObjectAnimator.ofFloat(view, "alpha", 0f, 1f);
         alpha.setDuration(2000);//设置持续时间
+
         alpha.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
@@ -140,21 +143,27 @@ public class LoveDialog extends Dialog {
     }
 
     public void playAnimation2(View view) {
+
+        Log.d("高度",height*0.7+"");
+
         List<Animator> animators = new ArrayList<>();//设置一个装动画的集合
         final ObjectAnimator scaleX = ObjectAnimator.ofFloat(view, "scaleX", 0f, 1f);
-        scaleX.setDuration(2000);//设置持续时间
+        scaleX.setDuration(5200);//设置持续时间
         ObjectAnimator scaleY = ObjectAnimator.ofFloat(view, "scaleY", 0f, 1);
-        scaleY.setDuration(2000);//设置持续时间
+        scaleY.setDuration(5200);//设置持续时间
         ObjectAnimator alpha = ObjectAnimator.ofFloat(view, "alpha", 0f, 1f);
-        alpha.setDuration(2000);//设置持续时间
-        alpha.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+        alpha.setDuration(5200);//设置持续时间
+        ObjectAnimator translationY = ObjectAnimator.ofFloat(view, "translationY", (float) (height*0.7), 0f);
+        translationY.setDuration(5200);//设置持续时间
+
+        translationY.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
                 //底部列表的translationY
 
             }
         });
-        alpha.addListener(new Animator.AnimatorListener() {
+        translationY.addListener(new Animator.AnimatorListener() {
             @Override
             public void onAnimationStart(Animator animation) {
             }
@@ -179,6 +188,7 @@ public class LoveDialog extends Dialog {
         animators.add(scaleX);
         animators.add(scaleY);
         animators.add(alpha);
+        animators.add(translationY);
         AnimatorSet btnSexAnimatorSet = new AnimatorSet();//动画集
         btnSexAnimatorSet.playTogether(animators);//设置一起播放
         btnSexAnimatorSet.start();//开始播放

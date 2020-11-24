@@ -58,7 +58,7 @@
             android:textStyle="italic|bold"
             android:lineSpacingMultiplier="1.2"
             android:textColor="#000"
-            android:textSize="@dimen/p_11dp" />
+            android:textSize="@dimen/p_14dp" />
 
         <TextView
             android:id="@+id/tv_bottom"

@@ -43,4 +43,7 @@ dependencies {
 
     implementation 'com.tencent.bugly:crashreport:latest.release'
     implementation 'com.tencent.bugly:nativecrashreport:latest.release'
+
+    //Android工具包
+    implementation 'com.blankj:utilcode:1.30.5'
 }

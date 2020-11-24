@@ -53,6 +53,9 @@ public class TiaoZiUtil3 {
                                 startTv(nn,context);
                             }else {
                                 if ((textView1.getText() + "").length() == context1.length()) {
+
+                                    Thread.sleep(5200);
+
                                     Intent intent = new Intent();
                                     intent.setAction("com.dreamcool.loveup.SHOW_DIALOG");
                                     context.sendBroadcast(intent);

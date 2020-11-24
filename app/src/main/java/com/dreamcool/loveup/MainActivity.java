@@ -35,6 +35,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.blankj.utilcode.util.BarUtils;
 import com.sdsmdg.tastytoast.TastyToast;
 import com.tencent.bugly.crashreport.CrashReport;
 
@@ -137,6 +138,8 @@ public class MainActivity extends AppCompatActivity {
 //        Bmob.initialize(this, "5c4b9d8e3d1fbaf2ca3f6088ab4ac35b");
         setContentView(R.layout.activity_main);
 
+        BarUtils.setStatusBarVisibility(MainActivity.this,false);
+
         yBroadCastReceiver = new MyBroadCastReceiver();
 
         //实例化过滤器并设置要过滤的广播
@@ -238,7 +241,7 @@ public class MainActivity extends AppCompatActivity {
 
     //弹出弹窗
     public void showDialog() {
-        loveDialog = new LoveDialog(MainActivity.this);
+        loveDialog = new LoveDialog(MainActivity.this,screenWidth);
         loveDialog.setCanceledOnTouchOutside(false);
 
         loveDialog.setOnKeyListener(new DialogInterface.OnKeyListener() {
@@ -326,27 +329,6 @@ public class MainActivity extends AppCompatActivity {
                 //底部列表的
 
             }
-        });
-        alpha.addListener(new Animator.AnimatorListener() {
-            @Override
-            public void onAnimationStart(Animator animation) {
-            }
-
-            @Override
-            public void onAnimationEnd(Animator animation) {
-
-            }
-
-            @Override
-            public void onAnimationCancel(Animator animation) {
-
-            }
-
-            @Override
-            public void onAnimationRepeat(Animator animation) {
-
-            }
-
         });
         animators.add(scaleX);
         animators.add(scaleY);
@@ -522,7 +504,7 @@ public class MainActivity extends AppCompatActivity {
             public void onAnimationEnd(Animator animation) {
 
                 String text0 = "立丰国际砥砺奋进代理费覆盖单个电饭锅的覆盖的单个个的吧对吧的个是个是个是 说得 是多少 是大V是v是的v是多少大V说得v是大V说得是 根本 他额的发是v 播放对吧 对吧的吧的";
-                String text1 = "To傻猪：";
+                String text1 = "To XXX：";
                 String text2 = "        傻猪，生日快乐呀！你别管我怎么知道你生日，你只需要知道我对你的感情就像种子一样在我心中发芽了！如今已经长成了一棵爱的大树！我不知道你有没有感觉到。" +
                         "但是，我对你是真心的。想想看，这么久以来。你是那么关心我。肯听我发牢骚，肯安慰我，要我多爱自己……我现在才发现你是多么好的一个女孩啊！" +
                         "你是那样耐心地听一个喝醉的人说傻话。不行了！我真的好爱，好爱，好爱啊！希望你能让我这个无聊的宅男程序员守候在你身边好吗？让我转正吧，Boss！所以……";
@@ -530,8 +512,10 @@ public class MainActivity extends AppCompatActivity {
                 TiaoZiUtil tiaoZiUtil = new TiaoZiUtil(200, MainActivity.this);
                 tiaoZiUtil.setContext1(text1);
                 tiaoZiUtil.setTextView1(tvTo);
+
                 tiaoZiUtil.setContext2(text0);
                 tiaoZiUtil.setTextView2(tvContext);
+
                 tiaoZiUtil.setContext3(text3);
                 tiaoZiUtil.setTextView3(tvBottom);
                 tiaoZiUtil.start();
