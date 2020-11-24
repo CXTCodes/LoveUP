@@ -44,13 +44,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Random;
-import java.util.Timer;
-import java.util.TimerTask;
-
-import cn.bmob.v3.Bmob;
-import cn.bmob.v3.BmobSMS;
-import cn.bmob.v3.exception.BmobException;
-import cn.bmob.v3.listener.QueryListener;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -141,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Bmob.initialize(this, "5c4b9d8e3d1fbaf2ca3f6088ab4ac35b");
+//        Bmob.initialize(this, "5c4b9d8e3d1fbaf2ca3f6088ab4ac35b");
         setContentView(R.layout.activity_main);
 
         yBroadCastReceiver = new MyBroadCastReceiver();
@@ -185,7 +178,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (!isFast)
                     return;
-                CrashReport.testJavaCrash();
+//                CrashReport.testJavaCrash();
                 playAnimation(ivClickHeart);
                 playAnimation0(tvPoint);
                 isFast = false;
@@ -537,7 +530,7 @@ public class MainActivity extends AppCompatActivity {
                 TiaoZiUtil tiaoZiUtil = new TiaoZiUtil(200, MainActivity.this);
                 tiaoZiUtil.setContext1(text1);
                 tiaoZiUtil.setTextView1(tvTo);
-                tiaoZiUtil.setContext2(text2);
+                tiaoZiUtil.setContext2(text0);
                 tiaoZiUtil.setTextView2(tvContext);
                 tiaoZiUtil.setContext3(text3);
                 tiaoZiUtil.setTextView3(tvBottom);

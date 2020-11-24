@@ -37,10 +37,10 @@
             </intent-filter>
         </activity>
 
-        <provider
-            android:name="cn.bmob.v3.util.BmobContentProvider"
-            android:authorities="com.dreamcool.loveup.BmobContentProvider">
-        </provider>
+<!--        <provider-->
+<!--            android:name="cn.bmob.v3.util.BmobContentProvider"-->
+<!--            android:authorities="com.dreamcool.loveup.BmobContentProvider">-->
+<!--        </provider>-->
 
     </application>
 

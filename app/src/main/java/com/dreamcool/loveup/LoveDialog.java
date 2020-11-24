@@ -20,11 +20,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.util.logging.Handler;
-
-import cn.bmob.v3.BmobSMS;
-import cn.bmob.v3.exception.BmobException;
-import cn.bmob.v3.listener.QueryListener;
 
 
 /**
@@ -51,7 +46,7 @@ public class LoveDialog extends Dialog {
     }
 
     //发送短信
-    public void sendMessage() {
+    /**public void sendMessage() {
         BmobSMS.requestSMSCode("13192592373", "智能社团", new QueryListener<Integer>() {
             @Override
             public void done(Integer smsId, BmobException e) {
@@ -62,7 +57,7 @@ public class LoveDialog extends Dialog {
                 }
             }
         });
-    }
+    }*/
 
     private void setCustomDialog() {
         View mView = View.inflate(context, R.layout.love_dialog, null);
@@ -75,7 +70,7 @@ public class LoveDialog extends Dialog {
         ivYes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sendMessage();
+//                sendMessage();
                 playAnimation3(relativeLayout1);
 
             }
